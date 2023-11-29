@@ -1,0 +1,6 @@
+set.seed(123)
+random_numbers <- round(rnorm(10, mean = 0, sd = 1))
+occurrences <- table(random_numbers)
+cat("List of random numbers:\n", paste(random_numbers, collapse = ", "), "\n\n")
+cat("Occurrences of each value:\n")
+print(occurrences)
